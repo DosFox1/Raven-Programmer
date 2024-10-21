@@ -3,7 +3,7 @@ An implementation of a 68HC705E1 Programmer, to replace the 68HC05E1 Mask ROM Mi
 
 The EGRET and CUDA were used to implement the RTC, PRAM, Soft Power and other functions. As these are located near to the RTC battery, these are well known to be destroyed either by battery leaks or due to capacitor leaks.
 
- NOTE - THIS PROCESS HAS NOT BEEN TESTED YET, THIS REPOSITORY WILL BE UPDATED WHEN THE PROCESS HAS BEEN VALIDATED.
+** NOTE - THIS PROCESS HAS NOT BEEN TESTED YET, THIS REPOSITORY WILL BE UPDATED WHEN THE PROCESS HAS BEEN VALIDATED.**
 
 # How do I use it?
 
@@ -64,6 +64,9 @@ The data from 0x1F01 through to 0x1FEF should then be set to 0x00, as this is th
 Finally, the last 16 bytes from 0x1FF0 through to 0x1FFF are the EPROM user vectors, that need to be copied from the original ROM. 
 
 Additionally, there is an errata sheet (included) that details a bug with the exact mask version of the 68HC705 that I have programmed (D32N). Basically a silicon bug means that the 68HC705e1 doesn’t read the data at 0x1000, and reads the data at 0x0000 for a single cycle. This is why the included example ROM has a single byte of 0x12 at 0x0000 - this is a duplication of the data at 0x1000. It does not harm or hinder to have this additional byte present at 0x0000. 
+
+Additional correctly formatted ROMs will be added if and when they are needed. 
+Contact me directly for a specific ROM.
 
 # Errata
 VDEV2 is the current version of the Raven Programmer. The VDEV1 version had two issues - one introduced by me, the other by NXP. 
