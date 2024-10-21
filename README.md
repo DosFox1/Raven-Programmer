@@ -65,6 +65,13 @@ Finally, the last 16 bytes from 0x1FF0 through to 0x1FFF are the EPROM user vect
 
 Additionally, there is an errata sheet (included) that details a bug with the exact mask version of the 68HC705 that I have programmed (D32N). Basically a silicon bug means that the 68HC705e1 doesn’t read the data at 0x1000, and reads the data at 0x0000 for a single cycle. This is why the included example ROM has a single byte of 0x12 at 0x0000 - this is a duplication of the data at 0x1000. It does not harm or hinder to have this additional byte present at 0x0000. 
 
+# Errata
+VDEV2 is the current version of the Raven Programmer. The VDEV1 version had two issues - one introduced by me, the other by NXP. 
+The issue I managed to introduce was accidentally mislabelling R1 and R2. I managed to get the 330K and 20M labels the wrong way around. This resulted in the oscillator not running, and was fixed in VDEV2. 
+
+The major issue was introduced by NXP, who in their datasheet (68hc705e1.pdf in the datasheet folder) failed to mention that PB1 needed to be brought high to 5v, and PB6/PB7 needed to be brought low to 0v. As a result, with those three pins floating, the 68HC705e1 behaved erratically and failed to program. In this instant, both the verify and program LEDs remained illuminated.
+
+Thankfully, the discovery of the original Motorola datasheet (68HC705e1 Better Datasheet.pdf), I was able to correct the issue, and actually program the devices.
 
 # Acknowledgements 
 
