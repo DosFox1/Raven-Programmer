@@ -1,0 +1,34 @@
+Partlist
+
+Assembly variant: 
+
+Part     Value          Device                   Package                      Library         Sheet
+
+C1       10p 50V        10pF_TH_CAP              CAP_5.08MM_PITCH             Capacitors TH   1
+C2       10p 50V        10pF_TH_CAP              CAP_5.08MM_PITCH             Capacitors TH   1
+C3       100n 50V       100N_TH_CAP              CAP_5.08MM_PITCH             Capacitors TH   1
+C4       100n 50V       100N_TH_CAP              CAP_5.08MM_PITCH             Capacitors TH   1
+C5       100n 50V       100N_TH_CAP              CAP_5.08MM_PITCH             Capacitors TH   1
+C6       100n 50V       100N_TH_CAP              CAP_5.08MM_PITCH             Capacitors TH   1
+C7       100n 50V       100N_TH_CAP              CAP_5.08MM_PITCH             Capacitors TH   1
+CN1      VTB301V-2P-B   TERMINALBLOCK2WAY        TERMINALBLOCK2WAY            Connectors      1
+CN2      VTB301V-2P-B   TERMINALBLOCK2WAY        TERMINALBLOCK2WAY            Connectors      1
+LED1     Red            5MM_LED_RED              5MM_TH_VERT_STANDARD         Optoelectronics 1
+LED2     Green          5MM_LED_GREEN            5MM_TH_VERT_STANDARD         Optoelectronics 1
+R1       330k           330K_TH_RESISTOR         RESISTORTHRUHOLE             Resistors TH    1
+R2       20M            20M_TH_RESISTOR          RESISTORTHRUHOLE             Resistors TH    1
+R3       10k            10K_TH_RESISTOR          RESISTORTHRUHOLE             Resistors TH    1
+R4       10k            10K_TH_RESISTOR          RESISTORTHRUHOLE             Resistors TH    1
+R5       10k            10K_TH_RESISTOR          RESISTORTHRUHOLE             Resistors TH    1
+R6       10k            10K_TH_RESISTOR          RESISTORTHRUHOLE             Resistors TH    1
+R7       10k            10K_TH_RESISTOR          RESISTORTHRUHOLE             Resistors TH    1
+R8       390R           390R_TH_RESISTOR         RESISTORTHRUHOLE             Resistors TH    1
+R9       390R           390R_TH_RESISTOR         RESISTORTHRUHOLE             Resistors TH    1
+R10      10k            10K_TH_RESISTOR          RESISTORTHRUHOLE             Resistors TH    1
+SW1      SPDT           SK12D07_SLIDE_SWITCH     SK12D07_SLIDE_SWITCH         Switches        1
+SW2      SPDT           SK12D07_SLIDE_SWITCH     SK12D07_SLIDE_SWITCH         Switches        1
+SW3      DTS-61         DIP_TACT_SWITCH_6X6TH    DIP_DTS_6_TACT_SWITCH_6X6_TH Switches        1
+U1       68HC705E1      68HC705E1                DIP28 Adapter                CN1             1
+U2       27C64P         27C64P                   DIL28-6                      microchip       1
+U3       74HCT4040N     74HCT4040N               DIL16                        40xx            1
+Y1       32.768kHz      CRYSTAL-32.768KHZPTH-2X6 CRYSTAL-PTH-2X6-CYL          SparkFun-Clocks 1
