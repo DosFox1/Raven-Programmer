@@ -3,7 +3,7 @@ An implementation of a 68HC705E1 Programmer, to replace the 68HC05E1 Mask ROM Mi
 
 The EGRET and CUDA were used to implement the RTC, PRAM, Soft Power and other functions. As these are located near to the RTC battery, these are well known to be destroyed either by battery leaks or due to capacitor leaks.
 
-** NOTE - THIS PROCESS HAS NOT BEEN TESTED YET, THIS REPOSITORY WILL BE UPDATED WHEN THE PROCESS HAS BEEN VALIDATED.**
+The EGRET replacement has been confirmed to work. Many thanks to Max1zzz for testing them.
 
 # How do I use it?
 
